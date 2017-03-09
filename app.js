@@ -27,11 +27,11 @@ app.get('/process_get', function (req, res) {
 response = {
 	latitude:req.query.latitude,
 	longiute:req.query.longitude,
-	start:req.query.start,
-	end:req.query.end
+	startDate:req.query.startDate,
+	endDate:req.query.endDate
 	};
 		       
-	var callURL = "https://ae77e367-1cb5-4692-b518-ccf49ed673f1:1PM28RVfi5@twcservice.mybluemix.net/api/weather/v1/geocode/"+response.latitude+"/"+response.longitude+"/almanac/daily.json?units=e&start="+response.start+"&end="+response.end+"&language=en-US";
+	var callURL = "https://ae77e367-1cb5-4692-b518-ccf49ed673f1:1PM28RVfi5@twcservice.mybluemix.net/api/weather/v1/geocode/"+response.latitude+"/"+response.longitude+"/almanac/daily.json?units=e&start="+response.startDate+"&end="+response.endDate+"";
 	
 	request.get(callURL, {
 	 json: true
