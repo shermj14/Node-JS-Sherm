@@ -31,7 +31,7 @@ response = {
 	end:req.query.end
 	};
 		       
-	var callURL = "https://ae77e367-1cb5-4692-b518-ccf49ed673f1:1PM28RVfi5@twcservice.mybluemix.net/api/weather/v1/geocode/"+response.latitude+"/"+response.longitude+"/almanac/daily.json?&start="+response.start+"&end="+response.end+"&units=e&language=en-US";
+	var callURL = "https://ae77e367-1cb5-4692-b518-ccf49ed673f1:1PM28RVfi5@twcservice.mybluemix.net/api/weather/v1/geocode/"+response.latitude+"/"+response.longitude+"/almanac/daily.json?units=e&start="+response.start+"&end="+response.end+"&language=en-US";
 	
 	request.get(callURL, {
 	 json: true
@@ -42,8 +42,8 @@ response = {
 	  	console.log(error);
 	  }
 	  else{
-		  var meta = body["metadata"];
-		  var id = meta["transaction_id"];
+		  //var meta = body["metadata"];
+		  //var id = meta["transaction_id"];
 		  res.send(body);
 	  }
 		
