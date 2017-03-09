@@ -37,6 +37,15 @@ response = {
 	},
 	function (error, response, body){
 	  console.log(body)
+	  if(error){
+	  	console.log(error);
+	  }
+	  else{
+		  var meta = body["metadata"];
+		  var id = meta["transaction_id"];
+		  res.send(body);
+	  }
+		
 	});
 
 })
