@@ -30,7 +30,7 @@ response = {
 	start:req.query.start
 	};
 
-	var callURL = "https://ae77e367-1cb5-4692-b518-ccf49ed673f1:1PM28RVfi5@twcservice.mybluemix.net/api/weather/v1/geocode/"+response.latitude+"/"+response.longitude+"/almanac/daily.json?start="+response.start+"/units=m&language=en-US";
+	var callURL = "https://ae77e367-1cb5-4692-b518-ccf49ed673f1:1PM28RVfi5@twcservice.mybluemix.net/api/weather/v1/geocode/"+response.latitude+"/"+response.longitude+"/almanac/daily.json?start=0112&end=0115&units=e&language=en-US";
 	
 	request.get(callURL, {
 	 json: true
