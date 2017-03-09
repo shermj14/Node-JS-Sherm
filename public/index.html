@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<html>
 <!--  <head>
     <title>NodeJS Starter Application</title>
     <meta charset="utf-8">
@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
 -->
+<head lang="en">
+<meta charset="UTF-8">
+<script language="Javascript">
+	function showInput() {
+		document.getElementById('display').innerHTML = 
+			document.getElementById("user_input").value;
+	}
+	</script>
 <body>
 	<form action="https://node-js---sherm.mybluemix.net/process_get" method="GET">
 		Latitude: <input type="text" name="latitude"> <br>
@@ -17,6 +25,8 @@
 		End Date (MMDD): <input type="text" name="end"> <br>
 		<input type="submit" value="Submit">
 	</form>
+	<p><span id='display'></span></p>
 </body>
-
-</html>
+	</html>
+	
+	
