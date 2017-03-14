@@ -6,3 +6,5 @@ applications:
   name: Node JS - Sherm
   host: Node-JS---Sherm
   disk_quota: 1024M
+  services:
+    - Weather Company Data-bm
